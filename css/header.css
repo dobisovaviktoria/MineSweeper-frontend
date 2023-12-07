@@ -10,6 +10,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+    border-bottom: solid white 2px;
     margin: 0px;
     padding: 0px;
 }
@@ -17,7 +18,7 @@ nav {
 
 .logo {
     justify-content: flex-start;
-    width: 5rem;
+    width: 5rem
  }
 .logo img {
     width:  100%;
@@ -47,23 +48,26 @@ nav {
 /* home css */
 body {
     display: grid;
-    grid-template-areas: 'header header header header'
-                         'banner banner banner banner'
-                         'promoPhoto promoPhoto  promoText promoText' 
-                           'footer  footer footer footer';
-    grid-template-rows: auto auto auto 6fr; 
-    grid-template-columns: auto auto auto auto; 
+    grid-template-areas: 'header header'
+                         'banner banner'
+                         'promoText promoPhoto' 
+                         'footer footer';
+
+    grid-template-rows: max-content max-content  5fr  1fr;
+    /* grid-template-columns: auto max(3) 24fr auto; */
     box-sizing: border-box;
     background-color: green;
+    min-height: 100vh;
 }
 .banner{
     grid-area: banner;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     /* background-image: url(/img/banner/dark-moon.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-    height: 300px;
+    /* height: 300px; */
     margin: 0px;
 }
 
@@ -71,8 +75,6 @@ body {
     color: white;
     font-weight: bolder;
     font-size: 200px;
-    text-align:  center;
-    align-self: center;
 }
 
 #promoText {
@@ -86,7 +88,9 @@ body {
 }
 
 .promo {
-    height: 400px;
+    display: flex;
+    background-color: gray;
+    align-items: center;
 
 }
 
