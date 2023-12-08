@@ -1,0 +1,54 @@
+@import url("/css/header.css");
+
+body {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'banner banner'
+                         'promoText promoPhoto' 
+                         'footer footer';
+
+    grid-template-rows: max-content max-content  5fr  max-content;
+    /* grid-template-columns: auto max(3) 24fr auto; */
+    box-sizing: border-box;
+    background-color: green;
+    min-height: 100vh;
+}
+.banner{
+    grid-area: banner;
+    display: grid;
+    place-items: center;
+    /* background-image: url(/img/banner/dark-moon.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    /* height: 300px; */
+    margin: 0px;
+}
+
+#bannerText {
+    color: white;
+    font-weight: bolder;
+    font-size: 200px;
+}
+
+.promo {
+    background-color: gray;
+    min-width: 50vw;
+}
+
+#promoText {
+    display: block;
+    grid-area: promoText;
+    background-color: red;
+}
+
+#promoPhoto {
+    grid-area: promoPhoto;
+    background-color: aliceblue;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    grid-area: footer;
+} 
