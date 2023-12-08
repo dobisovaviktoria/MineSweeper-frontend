@@ -5,14 +5,14 @@ body {
     display: grid;
     grid-template-areas: 'header header'
                          'banner banner'
-                         'promoText promoPhoto' 
+                         'main main'
                          'footer footer';
 
-    grid-template-rows: max-content max-content  5fr  max-content;
+    grid-template-rows: max-content max-content  5fr  auto;
     /* grid-template-columns: auto max(3) 24fr auto; */
     box-sizing: border-box;
     background-color: green;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .banner{
     grid-area: banner;
@@ -35,6 +35,7 @@ body {
 .promo {
     background-color: gray;
     min-width: 50vw;
+    /* height: 50vh; */
 }
 
 #promoText {
@@ -46,5 +47,11 @@ body {
 #promoPhoto {
     grid-area: promoPhoto;
     background-color: aliceblue;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 'promoText promoPhoto';
+
 }
 
