@@ -12,7 +12,7 @@ body {
     /* grid-template-columns: auto max(3) 24fr auto; */
     box-sizing: border-box;
     background-color: green;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 .banner{
     grid-area: banner;
@@ -52,6 +52,7 @@ main {
     grid-area: main;
     display: grid;
     grid-template-areas: 'promoText promoPhoto';
+    /* height: 100vh; */
 
 }
 
