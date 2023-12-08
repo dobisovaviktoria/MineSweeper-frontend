@@ -1,4 +1,5 @@
 @import url("/css/header.css");
+@import url(/css/footer.css);
 
 body {
     display: grid;
@@ -47,8 +48,3 @@ body {
     background-color: aliceblue;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    grid-area: footer;
-} 
