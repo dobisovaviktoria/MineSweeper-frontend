@@ -2,24 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/pages/game.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Title</title>
-    <link rel="stylesheet" href="/css/pages/game.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/index.html"><div class="logo">
-                <img src="/img/logo/image.png" alt="">
-            </div>
-            </a>
-            <div class="nav">
-                    <a href="/index.html"><div>Home</div></a> 
-                    <a href="/html/about-game.html"><div>Game</div></a> 
-                    <a href="/html/about-us.html"><div>About us</div></a> 
-                    <a href="/html/download.html"><div>Download</div></a> 
-                    <a href="/html/leaderboard.html"><div>Leaderboard</div></a>
-            </div>
-        </nav>  
-    </header>
+
+<!-- header -->
+<header>
+
+    <!-- logo -->
+    <a href="../index.html" class="logo">
+        <img src="../img/logo/image.png" alt="Mine Sweeper Logo">
+    </a>
+
+    <!-- nav links -->
+    <nav>
+        <div>
+            <a href="../index.html" tabindex="0">Home</a>
+            <a href="../html/about-game.html" class="active" tabindex="0">Game</a>
+            <a href="../html/about-us.html" tabindex="0">About us</a>
+            <a href="../html/download.html" tabindex="0">Download</a>
+            <a href="../html/leaderboard.html" tabindex="0">Leaderboard</a>
+        </div>
+    </nav>
+</header>
+
+<!-- footer -->
+<footer>
+    <div class="row primary">
+
+        <!-- about -->
+        <div class="column about">
+            <h3>Panic! At The Deadline</h3>
+            <p>
+                Some text Some text Some text Some text Some text
+            </p>
+        </div>
+
+        <!-- links -->
+        <div class="column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/about-game.html">Game</a></li>
+                <li><a href="../html/about-us.html">About us</a></li>
+                <li><a href="../html/download.html">Download</a></li>
+                <li><a href="../html/leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </div>
+
+        <!-- contact -->
+        <div class="column contact">
+            <h3>Contact</h3>
+            <address>Kdg</address>
+            <a href="mailto:info@student.kdg.be">info@student.kdg.be</a>
+        </div>
+    </div>
+
+    <div class="row copyright">
+        <p>Copyright &copy; 2023</p>
+    </div>
+</footer>
+
 </body>
 </html>
