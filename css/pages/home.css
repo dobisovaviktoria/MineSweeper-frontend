@@ -33,20 +33,22 @@ body {
 }
 
 .promo {
-    background-color: gray;
     min-width: 50vw;
-    /* height: 50vh; */
+    
 }
 
 #promoText {
     display: block;
     grid-area: promoText;
-    background-color: red;
+    padding: 10px;
+    background-color: black;
+    color: white;
 }
 
 #promoPhoto {
     grid-area: promoPhoto;
     background-color: aliceblue;
+
 }
 main {
     grid-area: main;
@@ -56,3 +58,17 @@ main {
 
 }
 
+#promoText h1 {
+    font-size: 2rem;
+}
+
+#promoText p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 2rem;
+}
+
+#mineVideo {
+    width: 100%;
+    height: 100%;
+}
