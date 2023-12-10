@@ -1,19 +1,16 @@
-@import url("/css/header.css");
-@import url(/css/footer.css);
+/*body {*/
+/*    display: grid;*/
+/*    grid-template-areas: 'header header'*/
+/*                         'banner banner'*/
+/*                         'main main'*/
+/*                         'footer footer';*/
 
-body {
-    display: grid;
-    grid-template-areas: 'header header'
-                         'banner banner'
-                         'main main'
-                         'footer footer';
-
-    grid-template-rows: max-content max-content  5fr  auto;
-    /* grid-template-columns: auto max(3) 24fr auto; */
-    box-sizing: border-box;
-    background-color: green;
-    min-height: 100vh;
-}
+/*    grid-template-rows: max-content max-content  5fr  auto;*/
+/*    !* grid-template-columns: auto max(3) 24fr auto; *!*/
+/*    box-sizing: border-box;*/
+/*    background-color: green;*/
+/*    min-height: 100vh;*/
+/*}*/
 .banner{
     grid-area: banner;
     display: grid;
