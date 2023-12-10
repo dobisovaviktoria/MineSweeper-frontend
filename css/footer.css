@@ -10,3 +10,19 @@ footer {
 #footerPanic {
     color: red;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 10px;
+}
+ul a {
+    color: white;
+}
+.copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
