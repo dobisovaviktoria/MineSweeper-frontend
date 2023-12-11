@@ -26,6 +26,8 @@
     --secondary-light-color: #000000;
     --secondary-dark-color: #000000;
 
+    --primary-text-color: #000000;
+
     /* font size */
     --micro-font-size: 0.6rem;
     --mini-font-size: 0.8rem;
@@ -51,6 +53,11 @@ body {
     min-height: 100vh;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+}
+
 header {
     grid-area: header;
 }
@@ -60,7 +67,7 @@ main {
 }
 
 footer {
-    grid: footer;
+    grid-area: footer;
 }
 
 ul {

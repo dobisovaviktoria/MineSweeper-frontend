@@ -1,33 +1,28 @@
-.centered-heading {
-    text-align: center;
-}
-
 body {
-    margin: 1rem;
-    color: black;
-    text-align: left;
+    color: var(--primary-text-color);
     line-height: 1.5;
     background: linear-gradient(to left, pink, white);
 }
 
-img[src*="hh.jpeg"] {
+.centered-heading {
+    text-align: center;
+}
+
+.top-left-img img {
     width: 300px;
     height: 300px;
-    border-radius: 100%;
-    float: right;
-    margin-right: 20px;
-}
-
-.container {
-    text-align: left;
-}
-
-img {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    display: compact;
-    margin: 0 auto;
+    float: right;
+}
+
+.team-members-images {
+    display: flex;
+}
+
+.team-members-images img {
+    flex: 33.33%;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .image-and-text-container {
@@ -35,42 +30,44 @@ img {
     align-items: center;
 }
 
-figure img {
+.team-members figure img {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
 }
 
-figure {
+.team-members figure {
     max-width: 35%;
-    height: fit-content;
-    float: left;
 }
 
-ul {
+.team-mission .goal ul {
     font-style: oblique;
-
 }
 
-p {
+.story p {
     text-align: justify;
     max-width: 650px;
 }
 
-h3 {
-    line-height: 2rem;
+.team-members h3 {
+    line-height: var(--large-font-size);
     text-align: center;
 }
 
-dt {
+.team-members dt {
     text-align: unset;
 }
 
-dd {
+.team-members dd {
     text-align: unset;
     max-width: 300px;
 }
 
+@media screen and (max-width: 500px) {
+    .team-members-images img {
+        width: 100%;
+    }
+}
 
 
 
