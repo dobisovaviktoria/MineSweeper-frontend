@@ -1,68 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap");
 
-body {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-rows: max-content 5fr max-content;
-  min-height: 100vh;
-}
 header {
-  grid-area: header;
+    grid-area: header;
 }
+
 main {
-  grid-area: main;
+    grid-area: main;
 }
+
 footer {
-  grid: footer;
+    grid: footer;
 }
+
 #banner {
-  background-image: url(/img/banner/space.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+    background-image: url(/img/banner/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 #highscores {
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
-  /* align-content: center; */
-  align-self: center;
-  height: 200px;
-  color: white;
-  margin-bottom: 20%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-content: center; */
+    align-self: center;
+    height: 200px;
+    color: white;
+    margin-bottom: 20%;
 }
 
 #bannerText {
-  font-family: "Pixelify Sans", sans-serif;
-  text-align: center;
-  color: red;
-  opacity: zero;
-  font-size: 80px;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 80px;
 }
 
 table {
-  /* display: flex; */
-  /* height: auto; */
-  margin: auto;
-  background: rgb(97, 41, 240, 0.3);
-  color: white;
-  /* width: auto; */
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+    /* display: flex; */
+    /* height: auto; */
+    margin: auto;
+    background: rgb(97, 41, 240, 0.3);
+    color: white;
+    /* width: auto; */
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
+
 table th,
 td {
-  font-family: "Pixelify Sans", sans-serif;
-  font-size: 1.5rem;
-  padding: 10px;
-  /* border: solid white 2px; */
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    /* border: solid white 2px; */
 }
+
 table th {
-  text-align: left;
+    text-align: left;
 }

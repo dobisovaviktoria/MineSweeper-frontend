@@ -1,20 +1,4 @@
-@import url("/css/header.css");
-@import url(/css/footer.css);
-
-body {
-    display: grid;
-    grid-template-areas: 'header header'
-                         'banner banner'
-                         'main main'
-                         'footer footer';
-
-    grid-template-rows: max-content max-content  5fr max-content;
-    /* grid-template-columns: auto max(3) 24fr auto; */
-    box-sizing: border-box;
-    background-color: green;
-    min-height: 100vh;
-}
-.banner{
+.banner {
     grid-area: banner;
     display: grid;
     place-items: center;
@@ -34,7 +18,7 @@ body {
 
 .promo {
     min-width: 50vw;
-    
+
 }
 
 #promoText {
@@ -50,6 +34,7 @@ body {
     background-color: aliceblue;
 
 }
+
 main {
     grid-area: main;
     /* display: grid;

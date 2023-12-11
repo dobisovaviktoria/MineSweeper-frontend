@@ -1,9 +1,7 @@
-@import url("/css/header.css");
-@import url(/css/footer.css);
-
 .centered-heading {
     text-align: center;
 }
+
 body {
     margin: 1rem;
     color: black;
@@ -11,7 +9,8 @@ body {
     line-height: 1.5;
     background: linear-gradient(to left, pink, white);
 }
-img[src*="hh.jpeg"]{
+
+img[src*="hh.jpeg"] {
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -22,42 +21,52 @@ img[src*="hh.jpeg"]{
 .container {
     text-align: left;
 }
+
 img {
-    width: 200px; height: 200px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: compact;
     margin: 0 auto;
 }
+
 .image-and-text-container {
     display: flex;
     align-items: center;
 }
+
 figure img {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
 }
+
 figure {
     max-width: 35%;
     height: fit-content;
     float: left;
 }
+
 ul {
     font-style: oblique;
 
 }
-p{
+
+p {
     text-align: justify;
     max-width: 650px;
 }
-h3{
+
+h3 {
     line-height: 2rem;
-    text-align:center;
+    text-align: center;
 }
-dt{
+
+dt {
     text-align: unset;
 }
-dd{
+
+dd {
     text-align: unset;
     max-width: 300px;
 }
