@@ -21,13 +21,6 @@
 
 }
 
-main {
-    display: grid;
-    grid-template-areas: 'banner banner'
-                         'promoText . promoPhoto';
-
-}
-
 #promoText {
     display: block;
     grid-area: promoText;
