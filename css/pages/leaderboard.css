@@ -14,11 +14,11 @@ footer {
 }
 
 #banner {
-    background-image: url(/img/gifs/explosion2.gif);
+    background-image: url(/img/gifs/dark-space.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* height: 100vh; */
+    /* height: 100%; */
 }
 
 #highscores {
@@ -37,6 +37,7 @@ footer {
     text-align: center;
     color: red;
     font-size: 80px;
+    height: 100%;
 }
 
 table {
@@ -61,4 +62,18 @@ table th,td {
 
 table th {
     text-align: left;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #banner {
+        height: 100vh;
+    }
+    #bannerText {
+        color: blue;
+        height: auto;
+    }
+    table {
+        border-radius:0%;
+    }
 }
