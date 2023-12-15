@@ -46,15 +46,15 @@
 body {
     display: grid;
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    "header header"
+    "main main"
+    "footer footer";
     grid-template-rows: max-content 5fr max-content;
     min-height: 100vh;
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -206,7 +206,7 @@ footer .copyright p {
     text-align: center;
 }
 
-#footerPanic {
+.footer-panic {
     color: red;
 }
 

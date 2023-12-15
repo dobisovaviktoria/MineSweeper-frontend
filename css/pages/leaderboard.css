@@ -6,6 +6,7 @@ header {
 
 main {
     grid-area: main;
+    
 }
 
 footer {
@@ -13,10 +14,11 @@ footer {
 }
 
 #banner {
-    background-image: url(/img/banner/space.jpg);
+    background-image: url(/img/gifs/dark-space.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    background-position: center;
+    /* height: 100%; */
 }
 
 #highscores {
@@ -35,6 +37,7 @@ footer {
     text-align: center;
     color: red;
     font-size: 80px;
+    height: 100%;
 }
 
 table {
@@ -50,8 +53,7 @@ table {
     border-top-right-radius: 5%;
 }
 
-table th,
-td {
+table th,td {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1.5rem;
     padding: 10px;
@@ -60,4 +62,18 @@ td {
 
 table th {
     text-align: left;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #banner {
+        height: 100vh;
+    }
+    #bannerText {
+        color: blue;
+        height: auto;
+    }
+    table {
+        border-radius:0%;
+    }
 }
