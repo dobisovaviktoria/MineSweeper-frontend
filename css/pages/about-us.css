@@ -4,16 +4,17 @@ body {
 }
 .centered-heading {
     position: absolute;
-    top: 16%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    font-size: 25px;
 }
 
 .team {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -22,7 +23,7 @@ body {
 
 .cover img {
     width: 100%;
-    height: 230px;
+    height: 70%;
     object-fit: fill;
 }
 
@@ -88,6 +89,9 @@ body {
     .team-members-images img {
         width: 100%;
     }
+}
+figure {
+    text-align: center;
 }
 
 
