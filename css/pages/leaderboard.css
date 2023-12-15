@@ -6,6 +6,7 @@ header {
 
 main {
     grid-area: main;
+    
 }
 
 footer {
@@ -13,10 +14,11 @@ footer {
 }
 
 #banner {
-    background-image: url(/img/banner/space.jpg);
+    background-image: url(/img/gifs/explosion2.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    background-position: center;
+    /* height: 100vh; */
 }
 
 #highscores {
@@ -50,8 +52,7 @@ table {
     border-top-right-radius: 5%;
 }
 
-table th,
-td {
+table th,td {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1.5rem;
     padding: 10px;
