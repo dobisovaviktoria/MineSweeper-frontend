@@ -1,69 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="../css/pages/game.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <title>Title</title>
-</head>
-<body>
-<!-- header -->
-<header>
-    <!-- logo -->
-    <a href="../index.html" class="logo">
-        <img src="../img/logo/image.png" alt="Mine Sweeper Logo"/>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages/game.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- logo -->
+      <a href="../index.html" class="logo">
+        <img src="../img/logo/image.png" alt="Mine Sweeper Logo" />
+      </a>
 
-    <!-- nav links -->
-    <nav>
+      <!-- nav links -->
+      <nav>
         <div>
-            <a href="../index.html" tabindex="0">Home</a>
-            <a href="../html/about-game.html" class="active" tabindex="0">Game</a>
-            <a href="../html/about-us.html" tabindex="0">About us</a>
-            <a href="../html/download.html" tabindex="0">Download</a>
-            <a href="../html/leaderboard.html" tabindex="0">Leaderboard</a>
+          <a href="../index.html" tabindex="0">Home</a>
+          <a href="../html/about-game.html" class="active" tabindex="0">Game</a>
+          <a href="../html/about-us.html" tabindex="0">About us</a>
+          <a href="../html/download.html" tabindex="0">Download</a>
+          <a href="../html/leaderboard.html" tabindex="0">Leaderboard</a>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
+    <main>
+      <div class="container">
+        <section class="info-game size">
+          <h1>The Aim of the Game</h1>
 
-</main>
+          <p>
+            Welcome to the world of Minesweeper, a game of strategy and
+            deduction where you must uncover hidden mines and navigate a
+            treacherous grid without detonating any of these explosive hazards.
+            Your goal is to identify and flag all the mines while revealing the
+            safe squares, ultimately achieving victory by clearing the entire
+            grid.
+          </p>
 
-<!-- footer -->
-<footer>
-    <div class="row primary">
+          <h2>Gameplay Overview</h2>
+
+          <p>
+            <span class="bold-game">Investigate:</span> Start by selecting a
+            square by entering its row and column numbers.
+          </p>
+          <p>
+            <span class="bold-game">Reveal or Flag:</span> If the square is
+            safe, a numerical value will appear, indicating the number of mines
+            surrounding it. If it's a mine, the game ends abruptly, and you're
+            declared the loser.
+          </p>
+          <p>
+            <span class="bold-game">Deduce and Flag:</span> Utilize the revealed
+            numbers to deduce the potential locations of hidden mines. If you're
+            unsure about a square, enter "y" after selecting it to flag it as a
+            suspected mine.
+          </p>
+          <p>
+            <span class="bold-game">Strategy and Risk:</span> Carefully consider
+            your moves, balancing the need to uncover safe squares with the
+            potential risk of detonating a mine. Flagging potential mines can
+            guide your decisions and reduce the risk of mishaps.
+          </p>
+          <p>
+            <span class="bold-game">Victory and Defeat:</span> If you
+            successfully flag all the mines while uncovering the safe squares,
+            you emerge victorious. However, detonating a single mine results in
+            your downfall, ending the game in defeat.
+          </p>
+
+          <h2>Inspiration</h2>
+
+          <p>
+            This game draws inspiration from the renowned classic Minesweeper, a
+            staple of Windows operating systems for decades. The thrill of
+            navigating a grid filled with unknown dangers and the satisfaction
+            of clearing it unscathed have captivated players worldwide.
+            Additionally, our implementation is heavily inspired by The Coding
+            Train's "<a href="https://m.youtube.com/watch?v=LFU5ZlrR21E"
+              >Coding Challenge #71: Minesweeper</a
+            >" video, which provides a comprehensive guide to creating this
+            classic game.
+          </p>
+        </section>
+        <section class="img-board size"></section>
+
+        <section class="screenshots-game">
+          <div class="screenshots-title">
+            <h1>Screenshots</h1>
+          </div>
+          <!-- <section class="screenshots-container">d</section> -->
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="row primary">
         <!-- about -->
         <div class="column about">
-            <h3><span class="footer-panic">Panic! </span>At The Deadline</h3>
-            <p>Some text Some text Some text Some text Some text</p>
+          <h3><span class="footer-panic">Panic! </span>At The Deadline</h3>
+          <p>Some text Some text Some text Some text Some text</p>
         </div>
 
         <!-- links -->
         <div class="column">
-            <h3>Links</h3>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../html/about-game.html">Game</a></li>
-                <li><a href="../html/about-us.html">About us</a></li>
-                <li><a href="../html/download.html">Download</a></li>
-                <li><a href="../html/leaderboard.html">Leaderboard</a></li>
-            </ul>
+          <h3>Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/about-game.html">Game</a></li>
+            <li><a href="../html/about-us.html">About us</a></li>
+            <li><a href="../html/download.html">Download</a></li>
+            <li><a href="../html/leaderboard.html">Leaderboard</a></li>
+          </ul>
         </div>
 
         <!-- contact -->
         <div class="column contact">
-            <h3>Contact</h3>
-            <address>Kdg</address>
-            <a href="mailto:info@student.kdg.be">info@student.kdg.be</a>
+          <h3>Contact</h3>
+          <address>Kdg</address>
+          <a href="mailto:info@student.kdg.be">info@student.kdg.be</a>
         </div>
-    </div>
+      </div>
 
-    <div class="row copyright">
+      <div class="row copyright">
         <p>Copyright &copy; 2023</p>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

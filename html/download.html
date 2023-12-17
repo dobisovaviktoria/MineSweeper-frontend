@@ -1,71 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="../css/pages/download.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <title>Title</title>
-</head>
-<body>
-<!-- header -->
-<header>
-    <!-- logo -->
-    <a href="../index.html" class="logo">
-        <img src="../img/logo/image.png" alt="Mine Sweeper Logo"/>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages/download.css" />
+    <title>Download</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- logo -->
+      <a href="../index.html" class="logo">
+        <img src="../img/logo/image.png" alt="Mine Sweeper Logo" />
+      </a>
 
-    <!-- nav links -->
-    <nav>
+      <!-- nav links -->
+      <nav>
         <div>
-            <a href="../index.html" tabindex="0">Home</a>
-            <a href="../html/about-game.html" tabindex="0">Game</a>
-            <a href="../html/about-us.html" tabindex="0">About us</a>
-            <a href="../html/download.html" class="active" tabindex="0"
+          <a href="../index.html" tabindex="0">Home</a>
+          <a href="../html/about-game.html" tabindex="0">Game</a>
+          <a href="../html/about-us.html" tabindex="0">About us</a>
+          <a href="../html/download.html" class="active" tabindex="0"
             >Download</a
-            >
-            <a href="../html/leaderboard.html" tabindex="0">Leaderboard</a>
+          >
+          <a href="../html/leaderboard.html" tabindex="0">Leaderboard</a>
         </div>
-    </nav>
-</header>
-<main>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="links-download size">
+          <h1>links</h1>
+          <h2>Order the game now</h2>
+          <a href="mailto:info@student.kdg.be"><button>Email</button></a>
+          <h2>Download instructions</h2>
+          <button>Download</button>
+        </section>
+        <section class="background-download size">
+          <div class="logo-download"></div>
+        </section>
+        <section class="instruction-download">
+          <div class="instruction-title">
+            <h1>Installation Instructions</h1>
+          </div>
+          <article class="instructions-text">
+            <h2>1. Clone the Repository:</h2>
+            <p>
+              Open your terminal or command prompt and navigate to the directory
+              where you want to install the Minesweeper game. Then, run the
+              following command to clone the GitLab repository:
+              <code
+                >git clone
+                https://gitlab.com/your-username/T2-group-1-game.git</code
+              >
+              Replace "your-username" with your actual GitLab username.
+            </p>
+            <h2>2. Navigate to the Game Directory:</h2>
+            <p>
+              Change your current directory to the Minesweeper game folder:
+              <code>cd T2-group-1-game</code>
+            </p>
+            <h2>3. Compile and Run the Java Code:</h2>
+            <p>
+              You can compile and run it directly using the following commands:
+              <code>javac Main.java</code>
+              <code>java Main</code>
+            </p>
+            <h2>4. Play the ASCII Minesweeper Game:</h2>
+            <p>
+              Once you've executed the commands, the ASCII Minesweeper game
+              should be displayed in the console. Follow the on-screen
+              instructions to play the game. Typically, you will use keyboard
+              controls to uncover tiles and avoid mines.
+            </p>
+            <h2>5. Enjoy the Game:</h2>
+            <p>
+              Play the Minesweeper game and enjoy the ASCII-based experience! If
+              there are specific controls or features, the game's console
+              interface will guide you through them.
+            </p>
 
-</main>
+            <p>
+              Check the README file in the repository for any additional
+              instructions or dependencies specific to the ASCII Minesweeper
+              game. If you encounter any issues during installation or
+              execution, refer to the project documentation or seek help from
+              the game's developers
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
 
-<!-- footer -->
-<footer>
-    <div class="row primary">
+    <!-- footer -->
+    <footer>
+      <div class="row primary">
         <!-- about -->
         <div class="column about">
-            <h3><span class="footer-panic">Panic! </span>At The Deadline</h3>
-            <p>Some text Some text Some text Some text Some text</p>
+          <h3><span class="footer-panic">Panic! </span>At The Deadline</h3>
+          <p>Some text Some text Some text Some text Some text</p>
         </div>
 
         <!-- links -->
         <div class="column">
-            <h3>Links</h3>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../html/about-game.html">Game</a></li>
-                <li><a href="../html/about-us.html">About us</a></li>
-                <li><a href="../html/download.html">Download</a></li>
-                <li><a href="../html/leaderboard.html">Leaderboard</a></li>
-            </ul>
+          <h3>Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/about-game.html">Game</a></li>
+            <li><a href="../html/about-us.html">About us</a></li>
+            <li><a href="../html/download.html">Download</a></li>
+            <li><a href="../html/leaderboard.html">Leaderboard</a></li>
+          </ul>
         </div>
 
         <!-- contact -->
         <div class="column contact">
-            <h3>Contact</h3>
-            <address>Kdg</address>
-            <a href="mailto:info@student.kdg.be">info@student.kdg.be</a>
+          <h3>Contact</h3>
+          <address>Kdg</address>
+          <a href="mailto:info@student.kdg.be">info@student.kdg.be</a>
         </div>
-    </div>
+      </div>
 
-    <div class="row copyright">
+      <div class="row copyright">
         <p>Copyright &copy; 2023</p>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

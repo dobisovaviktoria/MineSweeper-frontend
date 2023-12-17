@@ -47,10 +47,7 @@ table {
     background: rgb(97, 41, 240, 0.3);
     color: white;
     /* width: auto; */
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+   border-radius: 13px; 
 }
 
 table th,td {
