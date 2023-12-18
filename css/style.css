@@ -211,7 +211,7 @@ footer .copyright p {
     text-align: center;
 }
 
-.footer-panic {
+.red-panic {
     color: red;
 }
 
@@ -230,12 +230,19 @@ footer .copyright p {
     header nav {
         float: none;
         display: block;
+        border: none;
     }
 
     header nav a {
         float: none;
         display: block;
         text-align: left;
+        margin-bottom: 3%;
+    }
+
+    header nav a:active, header nav a:hover{
+        width: 100%;
+    /* background-color: red; */
     }
 
     /* footer section */

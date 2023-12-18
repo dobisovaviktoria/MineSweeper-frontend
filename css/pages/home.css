@@ -65,8 +65,7 @@
 
 @media screen and (max-width: 1000px) {
     .banner-text {
-        font-weight: bolder;
-        font-size: 70px;
+        display: none;
     }
 
     .promo-text h1 {

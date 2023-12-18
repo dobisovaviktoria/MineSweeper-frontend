@@ -1,102 +1,100 @@
 body {
-    color: var(--primary-text-color);
-    line-height: 1.5;
+  background-color: black;
 }
-.centered-heading {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-size: 25px;
+.container {
+  color: white;
+  display: grid;
 }
 
-.team {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.cover img {
-    width: 100%;
-    height: 70%;
-    object-fit: fill;
-}
-
-.top-left-img img {
-    width: 250px;
-    height: 250px;
-    float: right;
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/media/us1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: white;
 }
 
 .team-members-images {
-    display: flex;
-    margin-top: 1rem;
-    padding: 20px;
-    border: 1px ;
+  display: grid;
+  /* background-color: yellow; */
+  grid-template-areas: "tamer gloria emmanuel vicky";
+  gap: 5px;
+}
+.members {
+  /* flex: 1; */
+  width: 100%;
+  background-color: rgb(216, 208, 208);
+  /* background-color: rgb(176, 172, 172); */
+  color: black;
+  height: auto;
+  /* border: lightgray solid 3px; */
+  /* color: black; */
 }
 
-.team-members-images img {
-    flex: 33.33%;
-    padding: 5px;
-    width: 25%;
+.members h2,
+h4 {
+  text-align: center;
+  font-weight: bolder;
+}
+.members p {
+  padding: 10px;
+}
+.img-person {
+  /* width: 100%; */
+  /* background-image: url(/media/tamer.jpg) ; */
+  /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position:unset ; */
+  height: 300px;
+  width: 100%;
+  background-color: blue;
 }
 
-.image-and-text-container {
-    display: flex;
-    align-items: center;
+img {
+  width: 100%;
+  height: 100%;
 }
 
-.team-members figure img {
-    width: 70%;
-    height: 35%;
-    object-fit: fill;
+#tamer {
+  grid-area: tamer;
 }
 
-.team-members figure {
-    max-width: 25%;
+#gloria {
+  grid-area: gloria;
 }
 
-.team-mission .goal ul {
-    width: 45%;
-    margin: 1.5rem;
+#emmanuel {
+  grid-area: emmanuel;
 }
 
-.story p {
-    text-align: justify;
-    max-width: 650px;
+#vicky {
+  grid-area: vicky;
 }
 
-.team-members h3 {
-    line-height: var(--large-font-size);
-    text-align: center;
+@media screen and (max-width: 1000px) {
+  .banner {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .team-members-images {
+    grid-template-areas:
+      "tamer"
+      "gloria"
+      "emmanuel"
+      "vicky";
+    gap: 7px;
+  }
+  .team-mission {
+    padding: 5%;
+  }
+  .team-members h3 {
+    padding: 5%;
+  }
 }
-
-.team-members dt {
-    text-align: unset;
-}
-
-.team-members dd {
-    text-align: unset;
-    max-width: 300px;
-}
-
-@media screen and (max-width: 500px) {
-    .team-members-images img {
-        width: 100%;
-    }
-}
-figure {
-    text-align: center;
-}
-
-
-
-
-
-
-

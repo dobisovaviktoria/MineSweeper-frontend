@@ -80,6 +80,7 @@ button:hover {
 }
 
 .instructions-text p {
+  word-wrap: break-word;
   padding: 10px;
 }
 
