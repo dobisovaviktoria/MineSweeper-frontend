@@ -28,11 +28,11 @@
     text-align: center;
     color: red;
     font-size: 80px;
-    height: 100%;
+    height: auto;
 }
 
 table {
-    margin: auto;
+    /* margin: auto; */
     background: rgb(97, 41, 240, 0.3);
     color: white;
    border-radius: 13px; 

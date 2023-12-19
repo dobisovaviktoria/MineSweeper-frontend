@@ -42,6 +42,10 @@ h4 {
 }
 .members p {
   padding: 10px;
+  
+}
+.team-mission p {
+  width: 50vw;
 }
 .img-person {
   /* width: 100%; */
@@ -74,7 +78,11 @@ img {
 #vicky {
   grid-area: vicky;
 }
-
+.team {
+  color: g;
+  white-space:pre-line;
+  /* word-break: break-all; */
+}
 @media screen and (max-width: 1000px) {
   .banner {
     display: none;
@@ -94,7 +102,16 @@ img {
   .team-mission {
     padding: 5%;
   }
+
+  .team-mission p {
+    width: 100%;
+  }
   .team-members h3 {
-    padding: 5%;
+  padding: 5%;
+  }
+  .team-members {
+      /* max-width: 400px  ;  */
+    /* margin: auto; */
+    /* padding: 2rem; */
   }
 }

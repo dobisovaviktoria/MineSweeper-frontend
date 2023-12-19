@@ -8,7 +8,7 @@
   height: 100%;
 }
 .size {
-  width: 50vw;
+  min-width: 40vw;
   /* height: 90vh; */
 }
 .links-download {
@@ -27,7 +27,7 @@
 }
 
 .background-download {
-  width: 50vw;
+  width: 100%;
   background-image: url(/img/gifs/explosion2.gif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,10 +79,29 @@ button:hover {
   background-color: white;
 }
 
-.instructions-text p {
+.instructions-container {
+  display: grid;
+  grid-template-areas: 'text1 text2' ;
+}
+
+.instructions-container p {
   word-wrap: break-word;
   padding: 10px;
 }
+/* .instruction-text-1, .instruction-text-2 {
+  width: 50vw;
+} */
+.instruction-text-1  {
+  grid-area: text1;
+}
+
+.instruction-text-2 {
+  grid-area: text2;
+}
+
+/* .instruction-text-2 p {
+  white-space: pre;
+} */
 
 @media screen and (max-width: 1000px) {
   .container {
@@ -107,5 +126,13 @@ button:hover {
   }
   .logo-download {
     display: none;
+  }
+  .instruction-title {
+    font-size: 13px;
+  }
+  .instructions-container {
+    grid-template-areas: 'text1' 'text2' ;
+    padding: 5px;
+    /* text-align: justify; */
   }
 }
