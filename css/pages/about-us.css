@@ -48,7 +48,6 @@ h4 {
   width: 50vw;
 }
 .img-person {
-  /* width: 100%; */
   /* background-image: url(/media/tamer.jpg) ; */
   /* background-repeat: no-repeat;
     background-size: cover;
@@ -79,9 +78,8 @@ img {
   grid-area: vicky;
 }
 .team {
-  color: g;
   white-space:pre-line;
-  /* word-break: break-all; */
+  text-align: center;
 }
 @media screen and (max-width: 1000px) {
   .banner {
@@ -113,5 +111,9 @@ img {
       /* max-width: 400px  ;  */
     /* margin: auto; */
     /* padding: 2rem; */
+  }
+  .members {
+    width: 60%;
+    margin: auto;
   }
 }

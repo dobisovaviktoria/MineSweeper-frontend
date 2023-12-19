@@ -11,8 +11,7 @@ main {
     height: 100%;
 }
 .size {
-    min-width: 50vw;
-
+    min-width: 49vw;
 }
 .bold-game {
     font-weight: bold;
@@ -20,7 +19,7 @@ main {
 .info-game {
     grid-area: info;
     text-align: justify;
-    padding: 10px;
+    padding: 10px 20px;
 }
 .info-game p {
    line-height: 1.5; 
