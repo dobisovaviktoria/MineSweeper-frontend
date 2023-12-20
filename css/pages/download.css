@@ -1,138 +1,134 @@
 .container {
-  display: grid;
-  grid-template-areas:
+    display: grid;
+    grid-template-areas:
     "links logo"
     "instruction instruction";
-  grid-template-rows: auto auto;
-  width: 100%;
-  height: 100%;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: 100%;
 }
+
 .size {
-  min-width: 40vw;
-  /* height: 90vh; */
+    min-width: 40vw;
 }
+
 .links-download {
-  grid-area: links;
-  /* background-color: black; */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  text-align: center;
+    grid-area: links;
+    color: var(--seconday-text-color);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+    text-align: center;
 }
 
 .links-download h1 {
-  font-weight: bolder;
-  font-size: 3rem;
+    font-weight: bolder;
+    font-size: 3rem;
 }
 
 .background-download {
-  width: 100%;
-  background-image: url(/img/gifs/explosion2.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-  background-position: center;
+    width: 100%;
+    background-image: url(/img/gifs/explosion2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-position: center;
 }
 
 .logo-download {
-  grid-area: logo;
-  background-image: url(/img/logo/image.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  /* background-color: black; */
-  width: 100%;
-  height: 500px;
-  /* padding: 10rem; */
+    grid-area: logo;
+    background-image: url(/img/logo/image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    /* padding: 10rem; */
 }
 
 button {
-  width: 30%;
-  padding: 10px;
-  background: white;
-  margin: 30px auto 0px auto;
-  border-radius: 13px;
-  font-weight: bolder;
+    width: 30%;
+    padding: 10px;
+    background: white;
+    margin: 30px auto 0 auto;
+    border-radius: 13px;
+    font-weight: bolder;
 }
 
 button:hover {
-  color: red;
-  background: black;
-  border-color: gray;
+    color: var(--logo-text-color);
+    background: var(--primary-bg-color);
+    border-color: var(--border-color);
 }
 
 .instruction-download {
-  grid-area: instruction;
-  color: white;
-  background: black;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  font-weight: bolder;
-  border-bottom: solid lightslategrey 3px;
+    grid-area: instruction;
+    color: var(--seconday-text-color);
+    background: var(--primary-bg-color);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: solid var(--border-light-color) 3px;
 }
 
 .instruction-title {
-  color: black;
-  padding: 0.1px;
-  background-color: white;
+    color: var(--primary-text-color);
+    padding: 0.1px;
+    background-color: var(--secondary-bg-color);
 }
 
 .instructions-container {
-  display: grid;
-  grid-template-areas: 'text1 text2' ;
+    display: grid;
+    grid-template-areas: 'text1 text2';
 }
 
 .instructions-container p {
-  word-wrap: break-word;
-  padding: 10px;
+    word-wrap: break-word;
+    padding: 10px;
 }
-/* .instruction-text-1, .instruction-text-2 {
-  width: 50vw;
-} */
-.instruction-text-1  {
-  grid-area: text1;
+
+.instruction-text-1 {
+    grid-area: text1;
 }
 
 .instruction-text-2 {
-  grid-area: text2;
+    grid-area: text2;
 }
 
-/* .instruction-text-2 p {
-  white-space: pre;
-} */
-
 @media screen and (max-width: 1000px) {
-  .container {
-    grid-template-areas:
+    .container {
+        grid-template-areas:
       "links links"
       "instruction instruction";
-  }
+    }
 
-  .size {
-    width: 100vw;
-  }
+    .size {
+        width: 100vw;
+    }
 
-  .links-download {
-    padding: 20px;
-  }
-  .links-download h1 {
-    margin: 0px;
-  }
+    .links-download {
+        padding: 20px;
+    }
 
-  .links-download button {
-    margin: 0px auto 0px auto;
-  }
-  .logo-download {
-    display: none;
-  }
-  .instruction-title {
-    font-size: 13px;
-  }
-  .instructions-container {
-    grid-template-areas: 'text1' 'text2' ;
-    padding: 5px;
-    /* text-align: justify; */
-  }
+    .links-download h1 {
+        margin: 0;
+    }
+
+    .links-download button {
+        margin: 0 auto 0 auto;
+    }
+
+    .logo-download {
+        display: none;
+    }
+
+    .instruction-title {
+        font-size: 13px;
+    }
+
+    .instructions-container {
+        grid-template-areas: 'text1' 'text2';
+        padding: 5px;
+    }
 }
