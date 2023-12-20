@@ -26,7 +26,6 @@ main {
 
 .info-game p {
     line-height: 1.5;
-
 }
 
 .img-board {
@@ -36,14 +35,9 @@ main {
     background-position: fixed;
     height: auto;
     width: 100%;
-
     background-repeat: no-repeat;
 }
 
-/* .img-board img {
-    width: 100%;
-    height: 100%;
-} */
 .screenshots-game {
     grid-area: screen;
     width: 100%;
@@ -55,7 +49,6 @@ main {
     text-align: center;
     height: auto;
     padding: 0.1px;
-
 }
 
 .screenshots-container {
