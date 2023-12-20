@@ -28,7 +28,7 @@
 
 .background-download {
   width: 100%;
-  background-image: url(/media/img/gifs/explosion2.gif);
+  background-image: url(/img/gifs/explosion2.gif);
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -37,7 +37,7 @@
 
 .logo-download {
   grid-area: logo;
-  background-image: url(/media/img/logo/image.png);
+  background-image: url(/img/logo/image.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

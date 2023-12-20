@@ -15,18 +15,16 @@
     --footer-hover-active-text-color: #cfd2d6;
     --footer-link-color: #a7a7a7;
 
-    --primary-bg-color: #ffffff;
+    --primary-bg-color: #000000;
     --secondary-bg-color: #ffffff;
-
-    --primary-color: #000000;
-    --primary-light-color: #000000;
-    --primary-dark-color: #000000;
-
-    --secondary-color: #000000;
-    --secondary-light-color: #000000;
-    --secondary-dark-color: #000000;
+    --secondary-light-bg-color: #CCCCCC;
 
     --primary-text-color: #000000;
+    --seconday-text-color: #ffffff;
+    --logo-text-color: #FF0000;
+
+    --border-color: #808080;
+    --border-light-color: #778899;
 
     /* font size */
     --micro-font-size: 0.6rem;
@@ -51,6 +49,7 @@ body {
     "footer footer";
     grid-template-rows: max-content 5fr max-content;
     min-height: 100vh;
+    background-color: var(--primary-bg-color);
 }
 
 figure {
@@ -212,11 +211,11 @@ footer .copyright p {
 }
 
 .red-panic {
-    color: red;
+    color: var(--logo-text-color);
 }
 
 /* Add media queries for responsiveness - when the screen is 600px wide or less, stack the links on top of each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
     /* header section */
     header {
         display: grid;
@@ -242,7 +241,6 @@ footer .copyright p {
 
     header nav a:active, header nav a:hover{
         width: 100%;
-    /* background-color: red; */
     }
 
     /* footer section */

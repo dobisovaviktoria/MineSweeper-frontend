@@ -5,10 +5,8 @@
     background-image: url(/media/img/gifs/explosion.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
     background-color: black;
-    /* height: 300px; */
-    margin: 0px;
+    margin: 0;
 }
 
 .banner-text {
@@ -19,15 +17,14 @@
 
 .promo {
     min-width: 40vw;
-
 }
 
 .promo-text {
     display: block;
     grid-area: promoText;
     padding: 10px;
-    background-color: black;
-    color: white;
+    background-color: var(--primary-bg-color);
+    color: var(--seconday-text-color);
 }
 
 .promo-photo {
@@ -37,11 +34,11 @@
 
 }
 
-.container  {
+.container {
     display: grid;
     grid-template-areas:
                         'banner banner'
-                        'promoText promoPhoto'; 
+                        'promoText promoPhoto';
     width: 100%;
     height: 100%;
 
@@ -70,19 +67,18 @@
 
     .promo-text h1 {
         width: 100%;
-    
-    font-size: 1.3rem;
-    margin: 2rem;
+        font-size: 1.3rem;
+        margin: 2rem;
     }
-    .container  {
+
+    .container {
         display: grid;
         grid-template-areas:
                             'banner'
                             'promoText'
-                            ' promoPhoto'; 
+                            ' promoPhoto';
         width: 100%;
         height: 100%;
-    
-    }
 
+    }
 }
