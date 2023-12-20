@@ -28,7 +28,7 @@ main {
 
 .img-board {
     grid-area: img;
-    background: url(/img/logo/board-logo.png);
+    background: url(/media/img/logo/board-logo.png);
     background-size: cover;
     background-position: fixed;
     height: auto;
