@@ -20,7 +20,7 @@
 #bannerText {
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
-    color: red;
+    color: var(--logo-text-color);
     font-size: 80px;
     height: auto;
 }

@@ -2,10 +2,10 @@
     grid-area: banner;
     display: grid;
     place-items: center;
-    background-image: url(/media/img/gifs/explosion.gif);
+    background-image: url(/img/gifs/explosion.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
+    background-color: var(--primary-bg-color);
     margin: 0;
 }
 
