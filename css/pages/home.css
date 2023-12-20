@@ -61,7 +61,7 @@
     height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
     .banner-text {
         display: none;
     }
@@ -70,6 +70,30 @@
         width: 100%;
         font-size: 1.3rem;
         margin: 2rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+                            'banner'
+                            'promoText'
+                            ' promoPhoto';
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-text {
+        display: none;
+    }
+
+    .promo-text h1 {
+        width: 100%;
+        font-size: 1.3rem;
+        margin: 2rem;
+        color: red;
     }
 
     .container {
