@@ -38,7 +38,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.screenshots-game {
+.screenshots-presentation {
     grid-area: screen;
     width: 100%;
 }
@@ -93,9 +93,14 @@ main {
     grid-area: img6;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
     .screenshots-container {
-        display: flex;
-        flex-direction: column;
+        grid-template-areas: 'img1'
+                         'img2 '
+                        'img3'
+                        'img4'
+                        'img5'
+                         'img6';
     }
 }
