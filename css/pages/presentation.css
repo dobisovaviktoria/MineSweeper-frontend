@@ -92,3 +92,10 @@ main {
 #img6 {
     grid-area: img6;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .screenshots-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

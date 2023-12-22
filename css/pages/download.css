@@ -96,11 +96,23 @@ button:hover {
   grid-area: text2;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .container {
       grid-template-areas:
     "links links"
     "instruction instruction";
+  }
+
+  
+  p {
+    font-size: var(--small-font-size);
+  }
+  h1 {
+    
+  }
+   h2, h3 {
+    font-size: var(--small-font-size);
+  
   }
 
   .size {
@@ -112,10 +124,12 @@ button:hover {
   }
 
   .links-download h1 {
+    font-size: var(--medium-font-size);
       margin: 0;
   }
 
   .links-download button {
+    font-size: var(--mini-font-size);
       margin: 0 auto 0 auto;
   }
 
@@ -131,4 +145,117 @@ button:hover {
       grid-template-areas: 'text1' 'text2';
       padding: 5px;
   }
+  .instructions-container p {
+    font-size: var(--mini-font-size);
+  }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+      grid-template-areas:
+    "links links"
+    "instruction instruction";
+  }
+
+  
+  p {
+    font-size: var(--medium-font-size);
+  }
+  h1 {
+    
+  }
+   h2, h3 {
+    font-size: var(--medium-font-size);
+  
+  }
+
+  .size {
+      width: 100vw;
+  }
+
+  .links-download {
+      padding: 20px;
+  }
+
+  .links-download h1 {
+    font-size: var(--large-font-size);
+      margin: 0;
+  }
+
+  .links-download button {
+    font-size: var(--small-font-size);
+      margin: 0 auto 0 auto;
+  }
+
+  .logo-download {
+      display: none;
+  }
+
+  .instruction-title {
+      font-size: 13px;
+  }
+
+  .instructions-container {
+      grid-template-areas: 'text1' 'text2';
+      padding: 5px;
+  }
+  .instructions-container p {
+    font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+      grid-template-areas:
+    "links links"
+    "instruction instruction";
+  }
+
+  
+  p {
+    font-size: var(--medium-font-size);
+  }
+  h1 {
+    
+  }
+   h2, h3 {
+    font-size: var(--medium-font-size);
+  
+  }
+
+  .size {
+      width: 100vw;
+  }
+
+  .links-download {
+      padding: 20px;
+  }
+
+  .links-download h1 {
+    font-size: var(--large-font-size);
+      margin: 0;
+  }
+
+  .links-download button {
+    font-size: var(--small-font-size);
+      margin: 0 auto 0 auto;
+  }
+
+  .logo-download {
+      display: none;
+  }
+
+  .instruction-title {
+      font-size: 13px;
+  }
+
+  .instructions-container {
+      grid-template-areas: 'text1' 'text2';
+      padding: 5px;
+  }
+  .instructions-container p {
+    font-size: var(--small-font-size);
+  }
+}
+
+
